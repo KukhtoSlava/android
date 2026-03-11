@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="autobox"
+          fetch="https://github.com/KukhtoSlava" />
+
+  <!-- Override frameworks/base with AutoBox fork (branch: autobox) -->
+  <remove-project name="LineageOS/android_frameworks_base" />
+  <project path="frameworks/base"
+           name="android_frameworks_base"
+           remote="autobox"
+           revision="autobox"
+           groups="pdk-cw-fs,pdk-fs,sysui-studio" />
+
+  <!-- AutoBox vendor configuration -->
+  <project path="vendor/autobox"
+           name="vendor_autobox"
+           remote="autobox"
+           revision="main" />
+
+</manifest>
