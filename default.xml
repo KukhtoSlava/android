@@ -1032,4 +1032,5 @@
 
   <include name="snippets/lineage.xml" />
   <include name="autobox.xml" />
+  <include name="drivedeck.xml" />
 </manifest>
